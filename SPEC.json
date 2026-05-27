@@ -1,0 +1,21 @@
+{
+  "title": "PitchReady",
+  "one_liner": "A personal VC fundraising tracker and checklist that guides founders through every stage of the pitch process.",
+  "problem_statement": "First-time founders entering the VC fundraising process are often blindsided by the complexity, sequencing, and unwritten rules of investor outreach. There is no single structured tool that combines process guidance with personal tracking, forcing founders to cobble together spreadsheets, notes, and secondhand advice. This leads to missed follow-ups, poor preparation, and costly mistakes during high-stakes conversations.",
+  "target_user": "Early-stage founders and technical co-founders who are preparing for or actively going through their first VC fundraising round.",
+  "features": [
+    "VC Pipeline Tracker: A kanban-style board where users add investor contacts and drag them through customizable stages (e.g., Researching, Intro Requested, Pitch Scheduled, Follow-up, Term Sheet, Passed) with notes and last-contact dates stored in localStorage.",
+    "Fundraising Checklist: An interactive, opinionated step-by-step checklist covering the full VC engagement lifecycle (deck prep, warm intro strategy, due diligence docs, term sheet review), with each item checkable and persistently saved so users can track their overall readiness score.",
+    "Pitch Notes Journal: A simple per-investor notes panel where users log what happened in each meeting, objections raised, and next steps, giving them a private, searchable record of every conversation tied to their pipeline entries."
+  ],
+  "non_goals": [
+    "No email integration or automated outreach — this is a planning and tracking tool, not a CRM with communication features.",
+    "No shared or collaborative workspaces — the app is strictly single-user with no multi-player or export-to-team functionality.",
+    "No AI-generated pitch content or deck templates — the app guides process, not content creation."
+  ],
+  "technical_constraints": [
+    "Client-side only — no backend, no API calls, no server-side rendering beyond static Next.js export.",
+    "localStorage persistence — all pipeline entries, checklist state, and journal notes must survive page refreshes using localStorage with a versioned schema key.",
+    "No authentication — the app is fully open with no login, user accounts, or session management of any kind."
+  ]
+}
